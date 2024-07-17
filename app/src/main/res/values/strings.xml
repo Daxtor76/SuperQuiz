@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">SuperQuiz</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_title">Welcome to \nSuperQuiz!</string>
+    <string name="welcome_askName">What\'s your name?</string>
+    <string name="welcome_nameField_placeholder">Type your name here</string>
+    <string name="welcome_button">Let\'s play!</string>
 </resources>

@@ -1,14 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".WelcomeFragment">
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".WelcomeFragment"
+    android:background="@color/blue">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/title"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/welcome_title"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:layout_margin="60dp"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="20dp"
+        android:background="#d2c2fd"/>
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/welcome_askName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/welcome_askName"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:layout_marginHorizontal="16dp"/>
+
+    <EditText
+        android:id="@+id/welcome_nameField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="40dp"
+        android:minHeight="48dp"
+        android:text="@string/welcome_nameField_placeholder"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/welcome_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:padding="24dp"
+        android:text="@string/welcome_button"
+        android:textSize="14sp"/>
+
+</LinearLayout>
