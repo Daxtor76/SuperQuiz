@@ -39,7 +39,7 @@
         android:layout_marginHorizontal="16dp"
         android:layout_marginVertical="40dp"
         android:minHeight="48dp"
-        android:text="@string/welcome_nameField_placeholder"
+        android:hint="@string/welcome_nameField_placeholder"
         android:textAlignment="center"/>
 
     <Button
