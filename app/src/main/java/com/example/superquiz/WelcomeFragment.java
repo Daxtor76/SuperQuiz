@@ -5,6 +5,8 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -62,7 +64,11 @@ public class WelcomeFragment extends Fragment
         binding.welcomeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // User just clicked
+                FragmentManager fragmentManager = getParentFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                QuizFragment quizFragment = new QuizFragment();
+                fragmentTransaction.add(R.id.fragment_container_view, quizFragment);
+                fragmentTransaction.commit();
             }
         });
     }
